@@ -1,0 +1,7 @@
+build:
+  docker:
+    web: Dockerfile
+    worker: bot/Dockerfile
+run:
+  web: gunicorn main:main --bind 0.0.0.0:$PORT -w 8 --worker-class aiohttp.GunicornWebWorker
+  worker: python3 main.py
