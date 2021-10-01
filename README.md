@@ -5,8 +5,8 @@
 install:  
     - add config keys in dlstar/bot/webgram/config.py  
     - and dlstar/web/webgram/config.py  
-    - install docker & docker-compose  `apt install docker.io docker-compose`  
-    - `docker-compose up`  
+    - install docker & docker-compose  `sudo apt install docker.io docker-compose`  
+    - `sudo docker-compose up`  
 
 Heroku:  
     - add config keys in */webgram/config.py  
